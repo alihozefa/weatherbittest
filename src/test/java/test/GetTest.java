@@ -54,6 +54,7 @@ public class GetTest extends GenericTest {
             log.info("Location no.: " +index);
             log.info("Location no.: " + result.get("data["+index+"].timestamp_utc"));
             log.info("Hourly Forecast is: " + result.get("data["+index+"].weather.description"));
+            log.info("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         }
     }
 }
