@@ -39,7 +39,7 @@ public class GetTest extends GenericTest {
     @Test
     public void getHourlyForecastTest(){
 
-        Response response = RestAssured.given().
+        Response response = RestAssured.given().log().ifValidationFails().
                 param("postal_code",config.getProperty("postalcode")).
                 param("key",config.getProperty("KEY")).
                 when().
